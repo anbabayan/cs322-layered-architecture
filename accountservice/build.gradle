@@ -4,17 +4,11 @@ plugins {
     id 'io.spring.dependency-management' version '1.1.4'
 }
 
-group = 'am.cs322'
+group = 'sia'
 version = '0.0.1-SNAPSHOT'
 
-allprojects {
-    repositories {
-        mavenCentral()
-    }
-
-    java {
-        sourceCompatibility = '17'
-    }
+repositories {
+    mavenCentral()
 }
 
 subprojects {
@@ -27,7 +21,6 @@ subprojects {
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'com.h2database:h2'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
-        runtimeOnly 'org.postgresql:postgresql'
     }
 
     test {
