@@ -1,6 +1,0 @@
-    subprojects {
-        dependencies {
-            implementation(project(":business"))
-            implementation(project(":domain"))
-        }
-    }
